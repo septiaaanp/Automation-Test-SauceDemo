@@ -34,6 +34,8 @@ npm run testWithFlag --tags="@TEST001"
 # Important Notes:
 
 
-# Directory Cleanup: Before the automation tests execute, the script will check for the existence of the test-results and report folders within the project directory. If these folders exist, it will be deleted. If do not exist, the test run will proceed. If you experience issues with this process (potentially due to using a non-Windows operating system), please adjust the "pretest" script in package.json to use commands compatible with your OS.
+# Directory Cleanup: 
+Before the automation tests execute, the script will check for the existence of the test-results and report folders within the project directory. If these folders exist, it will be deleted. If do not exist, the test run will proceed. If you experience issues with this process (potentially due to using a non-Windows operating system), please adjust the "pretest" script in package.json to use commands compatible with your OS.
 
-# Troubleshooting: If you encounter any difficulties, please contact me via email at septianpp.work@gmail.com.
+# Troubleshooting: 
+If you encounter any difficulties, please contact me via email at septianpp.work@gmail.com.
