@@ -1,0 +1,8 @@
+{
+    "default": {
+      "format": [
+          "json:features/support/test-results/cucumber-report.json",
+          "progress-bar"
+      ]
+    }
+  }
