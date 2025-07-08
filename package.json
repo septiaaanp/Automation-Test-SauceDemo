@@ -1,0 +1,21 @@
+{
+  "name": "septian_perdana_p_amartha_test_automation",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "pretest": "node -e \"const fs = require('fs'); const path = require('path'); try { fs.rmSync(path.join('features', 'support', 'test-results'), { recursive: true, force: true }); } catch (err) { console.error(err); } try { fs.rmSync(path.join('features', 'support', 'report'), { recursive: true, force: true }); } catch (err) { console.error(err); }\"",
+    "test": "npx cucumber-js --config features/support/config/cucumber.json || exit 0",
+    "testWithFlag": "npm run pretest && (npx cucumber-js --config features/support/config/cucumber.json --tags %npm_config_tags% && npm run posttest) || npm run posttest",
+    "posttest": "node helper/generate_report.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@cucumber/cucumber": "^9.4.0",
+    "chai": "^5.2.0",
+    "cucumber-html-reporter": "^7.1.1",
+    "selenium-webdriver": "^4.11.1"
+  }
+}
