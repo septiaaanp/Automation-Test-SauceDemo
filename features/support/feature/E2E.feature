@@ -1,5 +1,5 @@
 @SauceDemo
-Feature: Acceptance Test for Product Page Ebay
+Feature: Acceptance Test for Sauce Demo site
 
 # 1. Automate login flow, add "Sauce Labs Backpack" to cart and verify that correct item is added to cart
 
@@ -47,7 +47,7 @@ Feature: Acceptance Test for Product Page Ebay
        |Sauce Labs Backpack  |
 
     @TEST004
-    Scenario: Login and Add Product more than 1 to Cart
+    Scenario: Login and navigate to about page
       Given I am on the Saucedemo login page
       When I enter valid username "standard_user" and password "secret_sauce"
       And I click the "Login" button
